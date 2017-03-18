@@ -2,9 +2,9 @@
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'sinatra/activereord'
+require 'sinatra/activerecord'
 
-set :database, "sqlite3:/home/qq/myapp/barbershop/db/pizzashop.db"
+set :database, "sqlite3:/home/qq/myapp/PizzaShop/db/pizzashop.db"
 
 class Product < ActiveRecord::Base
 end
