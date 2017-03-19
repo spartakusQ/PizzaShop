@@ -11,6 +11,7 @@ end
 
 
 get '/' do
+	@product = Product.all
 	erb :index
 end
 
