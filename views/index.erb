@@ -2,29 +2,34 @@
 
 <div class="row">
 
-<% @product.each do |p| %>
-<div class="col-md-3">
+  <% @product.each do |p| %>
+  <div class="col-md-3">
 
+      <div>
+          <%= p.title %> </br>
+      </div>
 
-  <%= p.title %> </br>
+      <div>
+          <img src="<%= p.path_to_image %>"width="200" height="200" /> </br>
+      </div>
 
-  <img src="<%= p.path_to_image %>"width="200" height="200" /> </br>
+      <div>
+          Price:  <%= p.price %> rur </br>
+      </div>
 
-  Price:  <%= p.price %> rur </br>
-  Size:  <%= p.size %> </br>
+      <div>
+          Size:  <%= p.size %> </br>
+      </div>
 
-  <p>
-    <button type="button" class="btn btn-success btn-xs">Add to card</button>
-  </p>
+      <div>
+          <p>
+              <button type="button" class="btn btn-success btn-xs" onclick="add_to_cart()">Add to cart</button>
+          </p>
+      </div>
 
-
-
-
-
+  </div>
+  <% end %>
 </div>
-<% end %>
-</div>
-
 </br>
 </br>
 
