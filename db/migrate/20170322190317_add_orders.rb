@@ -1,5 +1,6 @@
 class AddOrders < ActiveRecord::Migration
   def change
+<<<<<<< HEAD
 
 
     create_table :orders do |t|
@@ -15,5 +16,7 @@ class AddOrders < ActiveRecord::Migration
 
 
 
+=======
+>>>>>>> master
   end
 end
