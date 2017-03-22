@@ -9,6 +9,10 @@ set :database, "sqlite3:/home/qq/myapp/PizzaShop/db/pizzashop.db"
 class Product < ActiveRecord::Base
 end
 
+class Order < ActiveRecord::Base
+end
+
+
 
 get '/' do
 	@product = Product.all
