@@ -13,11 +13,12 @@ class Order < ActiveRecord::Base
 end
 
 
-post '/place_order' do
+
+post '/cart_order' do
 	@order = Order.create params[:order]
 	erb :place_order
-
 end
+
 
 
 
