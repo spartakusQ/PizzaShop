@@ -11,7 +11,7 @@ function something(){
 
 
 function add_to_cart(id){
-	var key = 'product_' + id
+	var key = "product_" + id;
 
 	var x = window.localStorage.getItem(key);
 	x = x * 1 + 1;
@@ -20,6 +20,11 @@ function add_to_cart(id){
 	update_orders_input();
 	update_orders_button();
 }
+
+
+
+
+
 
 
 
@@ -43,7 +48,7 @@ function update_orders_button(){
 
 
 function cart_get_number_of_items(){
-  var cnt = 0
+  var cnt = 0;
 
 	for(var i = 0; i < window.localStorage.length; i++)
 	{
@@ -62,7 +67,7 @@ function cart_get_number_of_items(){
 
 function cart_get_orders(){
 
-  var orders= '';
+  var orders = '';
 
 	for(var i = 0; i < window.localStorage.length; i++)
 	{
