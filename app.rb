@@ -20,6 +20,9 @@ post '/cart_order' do
 end
 
 
+get '/master_class' do
+  erb :master_class
+end
 
 
 get '/' do
